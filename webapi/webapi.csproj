@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <NoDefaultLaunchSettingsFile Condition="'$(ExcludeLaunchSettings)' == 'True'">True</NoDefaultLaunchSettingsFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SpaRoot>..\spa\</SpaRoot>
+    <SpaProxyServerUrl>https://localhost:3000</SpaProxyServerUrl>
+    <SpaProxyLaunchCommand>yarn dev</SpaProxyLaunchCommand>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy" version="6.0.0"/>
+  </ItemGroup>
+
+</Project>
